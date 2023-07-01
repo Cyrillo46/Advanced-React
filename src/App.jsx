@@ -4,7 +4,7 @@ import ErrorExample from "./tutorial/01-useState/starter/ErrorExample";
 function App() {
   return (
     <div className="container">
-      <Starter />
+      {/* <Starter /> */}
       <ErrorExample />
     </div>
   );

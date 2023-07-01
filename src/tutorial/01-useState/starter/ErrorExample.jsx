@@ -4,14 +4,14 @@ function ErrorExample() {
   let count = 0;
 
   const handleClick = () => {
-    count += 1;
-    console.log(count);
+    count++;
+    console.log("clicked");
   };
   return (
     <>
-      <div>{count}</div>
+      <h2>{count}</h2>
       <button type="button" onClick={handleClick}>
-        Increment
+        +1
       </button>
     </>
   );
