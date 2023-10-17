@@ -1,11 +1,10 @@
-import Starter from "./tutorial/01-useState/starter/01-error-example";
-import UseStateGotcha from "./tutorial/01-useState/starter/05-useState-gotcha";
+import CodeExample from "./tutorial/02-useEffect/starter/01-code-example.jsx";
+import Starter from "./tutorial/02-useEffect/starter/02-useEffect-basics.jsx";
 
 function App() {
   return (
     <div className="container">
-      {/* <Starter /> */}
-      <UseStateGotcha />
+      <CodeExample />
     </div>
   );
 }
