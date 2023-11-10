@@ -1,9 +1,9 @@
-import FetchData from "./tutorial/02-useEffect/starter/04-fetch-data.jsx";
 import { useState, useEffect } from "react";
+import Starter from "./tutorial/03-conditional-rendering/starter/06-toggle-challenge.jsx";
 function App() {
   return (
     <div className="container">
-      <FetchData />
+      <Starter />
     </div>
   );
 }
