@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import Starter from "./tutorial/03-conditional-rendering/starter/07-user-challenge.jsx";
+import CleanupFunction from "./tutorial/02-useEffect/starter/05-cleanup-function.jsx";
 function App() {
   return (
     <div className="container">
-      <Starter />
+      <CleanupFunction />
     </div>
   );
 }
