@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
-import CleanupFunction from "./tutorial/02-useEffect/starter/05-cleanup-function.jsx";
+// import { useState, useEffect } from "react";
+import ControlledInputs from "./tutorial/06-forms/starter/01-controlled-inputs.jsx";
 function App() {
   return (
     <div className="container">
-      <CleanupFunction />
+      <ControlledInputs />
     </div>
   );
 }
