@@ -1,9 +1,11 @@
 // import { useState, useEffect } from "react";
-import ControlledInputs from "./tutorial/06-forms/starter/01-controlled-inputs.jsx";
+import UserChallenge from "./tutorial/06-forms/starter/02-user-challenge.jsx";
+// import MultipleInputs from "./tutorial/06-forms/starter/03-multiple-inputs.jsx";
 function App() {
   return (
     <div className="container">
-      <ControlledInputs />
+      <UserChallenge />
+      {/* <MultipleInputs /> */}
     </div>
   );
 }

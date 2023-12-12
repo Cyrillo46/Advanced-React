@@ -1,27 +1,39 @@
-import useState from 'react'
+import React, { useState } from "react";
 
 const ControlledInputs = () => {
-const [value, setValue] = useState()
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Name:", name);
+    console.log("Email:", email);
+  };
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
   return (
-    // - setup state values
-// - add value and onChange to each input
-// - setup onSubmit
     <>
-      <form action="">
+      <form onSubmit={handleSubmit}>
+        <h4>Controlled Inputs</h4>
         <div>
-          <h4>Controlled Inputs</h4>
-          <label htmlFor=""></label>
-          <input type="text"  value="" onChange={}/>
+          <label htmlFor="name">Name:</label>
+          <input type="text" value={name} onChange={handleNameChange} />
         </div>
         <div>
-          <h4></h4>
-          <label htmlFor="email"></label>
-          <input type="email" />
+          <label htmlFor="email">Email:</label>
+          <input type="email" value={email} onChange={handleEmailChange} />
         </div>
-        <button type="submit"></button>
+        <button type="submit">Submit</button>
       </form>
-      <h2>Submit</h2>
     </>
   );
 };
+
 export default ControlledInputs;

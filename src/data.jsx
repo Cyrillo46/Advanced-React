@@ -18,6 +18,6 @@ export const people = [
         },
       },
     ],
-    
+  },
   { id: 4, name: "david" },
 ];
