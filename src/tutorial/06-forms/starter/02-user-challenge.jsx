@@ -10,14 +10,14 @@ const UserChallenge = () => {
     if (!name) return;
     const fakeId = Date.now();
     const newUser = { id: fakeId, name };
-    const newUsers = [...users, newUser];
-    setUsers(newUsers);
+    const updateUsers = [...users, newUser];
+    setUsers(updateUsers);
     setName("");
   };
 
-  const deleteUser = (id) => {
-    const newUsers = users.filter((user) => user.id !== id);
-    setUsers(newUsers);
+  const removeUser = (id) => {
+    const updatedUsers = users.filter((user) => user.id !== id);
+    setUsers(updatedUsers);
   };
 
   return (
@@ -25,7 +25,9 @@ const UserChallenge = () => {
       <form className="form" onSubmit={handleSubmit}>
         <h4>Add User</h4>
         <div className="form-row">
-          <label htmlFor="name" className="form-label"></label>
+          <label htmlFor="name" className="form-label">
+            name
+          </label>
           <input
             type="text"
             className="form-input"
@@ -38,18 +40,12 @@ const UserChallenge = () => {
         <button type="submit" className="btn btn-block">
           submit
         </button>
-        <button type="delete" onClick={deleteUser}></button>
       </form>
-      <h3>Users</h3>
-      <hr />
-      {users.map((person) => (
-        <div key={person.id}>
-          <h4>{person.name}</h4>
-          <button
-            type="button"
-            onClick={() => deleteUser(person.id)}
-            className="btn btn-danger">
-            delete
+      {users.map((user) => (
+        <div key={user.id}>
+          <h4>{user.name}</h4>
+          <button type="delete" onClick={() => removeUser(user.id)}>
+            Remove
           </button>
         </div>
       ))}
