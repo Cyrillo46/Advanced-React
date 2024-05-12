@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
-
+/*
+ practice on setting up state values and data fetching
+- create state variable
+  - user - default value null
+- fetch data from the url (for now just log result)
+- if you see user object in the console, continue with the videos
+*/
 const MultipleReturnsBasics = () => {
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
