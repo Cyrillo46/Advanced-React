@@ -1,8 +1,8 @@
-import MultipleReturnsFetchData from "./tutorial/03-conditional-rendering/starter/02-multiple-returns-fetch-data.jsx";
+import List from "./tutorial/05-leverage-javascript/final/leverage.jsx";
 function App() {
   return (
     <div className="container">
-      <MultipleReturnsFetchData />
+      <List />
     </div>
   );
 }
